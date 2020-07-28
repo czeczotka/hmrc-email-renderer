@@ -49,13 +49,11 @@ These are the headers where errors and/or warnings have been found:
 
 @headersValidation.headerOrHeaders
 @if(headersValidation.errors.nonEmpty) {
-  errors
 @for(error <- headersValidation.errors) {
-    @error.message (@error.percentageDescription) }}
+    @error.message @error.percentageDescription }}
 @if(headersValidation.warnings.nonEmpty) {
-  warnings
 @for(warning <- headersValidation.warnings) {
-    @warning.message (@warning.percentageDescription) }}
+    @warning.message @warning.percentageDescription }}
 }
 
 Contacting us
